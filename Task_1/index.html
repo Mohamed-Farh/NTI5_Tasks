@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dom app</title>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="container">
+    <section class="my-5">
+        <button class='btn btn-warning' id="showhide">
+            New Student
+        </button>
+    </section>
+    <form id="addStudent" class="my-3 p-3 border border-3 rounded border-info d-none">
+        <input placeholder="Student Name" class="form-control my-3" name="name">
+        <input placeholder="Student Age" class="form-control my-3" name="age">
+        <input placeholder="Student Level" class="form-control my-3" name="level">
+        <input placeholder="Student Degree" class="form-control my-3" name="degree">       
+        <button class="btn btn-success"> Add </button >
+    </form>
+    <table class="table table-bordered text-center">
+        <thead>
+            <th>   #     </th>
+            <th>  Name   </th>
+            <th> Age </th>
+            <th> Level </th>
+            <th> Degree </th>
+            <th> Grade </th>
+            <th> Action </th>
+        </thead>
+        <tbody id="studentsTable">
+        </tbody>
+    </table>
+    <script src="studentTask.js"></script>
+</body>
+</html>
